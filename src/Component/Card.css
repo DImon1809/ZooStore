@@ -1,0 +1,81 @@
+:root {
+  --width_card: 33vw;
+  --height_card: 70vh;
+}
+
+.card__div {
+  width: calc(var(--width_card) * var(--multiplier));
+  height: calc(var(--height_card) * var(--multiplier));
+  margin: 1vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(2.5vh * var(--multiplier));
+  background-color: #d9d9d9;
+  font-size: calc(28px * calc(var(--multiplier) / var(--divider)));
+  border-radius: 5vw;
+}
+
+.card__button {
+  width: calc(var(--button_width) * var(--multiplier));
+  height: calc(var(--button_height) * var(--multiplier));
+  color: white;
+  font-size: calc(var(--size_p) * var(--multiplier));
+  background-color: var(--background);
+  border-radius: var(--radius);
+  border: none;
+}
+
+.card__div p {
+  margin: 0;
+}
+
+.card__div img {
+  width: 86%;
+  height: var(--width);
+  margin-top: calc(4vh * var(--multiplier));
+  border-radius: calc(10vw * var(--multiplier));
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --width_card: 40vw;
+    --height_card: 66vh;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --height_card: 60vh;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --width_card: 50vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .card__div img {
+    height: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --width_card: 60vw;
+    --height_card: 55vh;
+  }
+
+  .card__div {
+    font-size: calc(24px * calc(var(--multiplier) / var(--divider)));
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --width_card: 80vw;
+    --height_card: 50vh;
+  }
+}

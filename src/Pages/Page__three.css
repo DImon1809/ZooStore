@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+:root {
+  --width: 50%;
+  --size_text_of_params: 20px;
+  --multiplier: 1;
+  --increase: 1;
+  --size_p: 1vw;
+  --divider: 1.2;
+  --radius: 1.5vw;
+  --button_width: 14vw;
+  --button_height: 4.5vw;
+}
+.page__three__section {
+  width: calc(var(--width) * 2);
+  height: 120vh;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.page__three__information {
+  position: absolute;
+  top: 13.3vh;
+  width: var(--width);
+  height: 100vh;
+  left: 0;
+}
+
+.head__img {
+  width: calc(60px * var(--multiplier));
+}
+
+.div__img {
+  width: calc(5vw * var(--increase));
+}
+
+.head__of__card {
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.head__text {
+  display: flex;
+  width: 84%;
+  font-size: calc(2vw * var(--multiplier));
+  align-items: center;
+  text-align: center;
+}
+
+.head__text p {
+  margin-top: 0;
+}
+
+.params__div {
+  width: var(--width);
+  height: 100vh;
+  position: fixed;
+  top: 13.3vh;
+  right: 0;
+}
+
+.form__params {
+  display: flex;
+  flex-direction: column;
+  gap: calc(5vh * var(--multiplier));
+  margin: 5.3vh 7.4vw;
+}
+
+.form__params > * {
+  width: var(--width);
+}
+
+.form__params select {
+  width: calc(var(--button_width) * var(--multiplier));
+  height: calc(6vh * var(--multiplier));
+  margin-top: 20px;
+  padding: 2px;
+  font-size: calc(var(--size_p) * var(--multiplier));
+}
+
+.input__range {
+  display: block;
+}
+
+.input__range input {
+  width: 8vw;
+  height: 4vh;
+}
+
+.input__numbers__text {
+  font-size: calc(var(--size_p) * var(--multiplier));
+}
+
+.button__apply {
+  width: calc(var(--button_width) * var(--multiplier));
+  height: calc(var(--button_height) * var(--multiplier));
+  background-color: var(--background);
+  border-radius: var(--radius);
+  border: none;
+  color: white;
+  font-size: calc(var(--size_text_of_params) * var(--multiplier));
+}
+
+.params__text {
+  font-size: calc(
+    var(--size_text_of_params) * calc(var(--multiplier)) / var(--divider)
+  );
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --multiplier: 0.8;
+    --increase: 1.2;
+    --size_p: 1.4vw;
+    --radius: 1.8vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .button__apply {
+    font-size: calc(
+      var(--size_text_of_params) * calc(var(--multiplier) / var(--divider))
+    );
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --multiplier: 0.8;
+    --increase: 1.1;
+    --size_p: 1.5vw;
+    --divider: 1.6;
+    --radius: 2vw;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --multiplier: 0.6;
+    --increase: 1.1;
+    --size_text_of_params: 30px;
+    --size_p: 2vw;
+    --button_width: 18vw;
+    --button_height: 10vh;
+  }
+
+  .head__text {
+    font-size: calc(3vw * var(--multiplier));
+  }
+}
+
+@media (max-width: 620px) {
+  :root {
+    --size_text_of_params: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --width: 80%;
+    --size_text_of_params: 20px;
+    --multiplier: 1;
+    --button_width: 22vw;
+    --button_height: 8vh;
+  }
+
+  .page__three__section {
+    width: var(--width);
+  }
+
+  .page__three__information {
+    position: absolute;
+    top: 100vh;
+    width: var(--width);
+    height: 100vh;
+    left: 0;
+  }
+
+  .head__img {
+    width: calc(40px * var(--multiplier));
+  }
+
+  .input__range input {
+    width: 20vw;
+  }
+
+  .params__div {
+    position: absolute;
+    top: 10vh;
+    height: 60vh;
+    left: 10vw;
+  }
+
+  .div__img {
+    width: calc(10vw * var(--increase));
+  }
+
+  .head__text {
+    font-size: calc(2.5vw * var(--multiplier));
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --divider: 1.6;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --size_text_of_params: 26px;
+    --size_p: 3vw;
+    --button_width: 26vw;
+    --button_height: 6vh;
+  }
+
+  .head__text {
+    font-size: calc(3.5vw * var(--multiplier));
+  }
+
+  .input__range input {
+    width: 24vw;
+  }
+}
