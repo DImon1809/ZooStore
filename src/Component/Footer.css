@@ -1,4 +1,8 @@
 .additional__infomation {
-  width: 100vw;
-  height: 50vh;
+  position: absolute;
+  top: 20vh;
+}
+
+.additional__infomation h1 {
+  font-size: 3vw;
 }

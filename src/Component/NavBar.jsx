@@ -5,24 +5,24 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = (props) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="header__div">
       <nav className={`NavBar__nav ${isOpen ? "active" : ""}`}>
         <ul className="NavBar__ul">
           <li className="nav__item">
-            <Link to="../Pages/Page__one">Главная</Link>
+            <Link to="/">Главная</Link>
           </li>
           <li className="nav__item">
-            <Link to="../Pages/Page__two">О нас</Link>
+            <Link to="/two">О нас</Link>
           </li>
           <li className="nav__item">
-            <Link to="../Pages/Page__three">Выбрать друга</Link>
+            <Link to="/three">Выбрать друга</Link>
           </li>
           <li className="nav__item">Наши контакты</li>
         </ul>
-        <Link to="../Pages/Page__basket">
+        <Link to="/basket">
           <img src={basket} alt="basket" className="img__basket" />
         </Link>
       </nav>

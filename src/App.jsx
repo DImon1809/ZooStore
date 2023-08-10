@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "./Component/NavBar";
-// import Footer from "./Component/Footer";
+import Footer from "./Component/Footer";
 import Page__one from "./Pages/Page__one";
 import Page__two from "./Pages/Page__two";
 import Page__three from "./Pages/Page__three";
@@ -31,18 +31,19 @@ function App() {
     <>
       <NavBar count={count} />
       <Routes>
-        <Route path="/Pages/Page__one" element={<Page__one />} />
-        <Route path="/Pages/Page__two" element={<Page__two />} />
+        <Route path="/" element={<Page__one />} />
+        <Route path="/two" element={<Page__two />} />
         <Route
-          path="/Pages/Page__three"
+          path="/three"
           element={<Page__three onProducts={productInBasketHandler} />}
         />
         <Route
-          path="/Pages/Page__basket"
+          path="/basket"
           element={
             <Page__basket products={products} count={count} allCost={allCost} />
           }
         />
+        <Route path="/*" element={<Footer />} />
       </Routes>
     </>
   );
