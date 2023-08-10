@@ -30,6 +30,7 @@ function App() {
   return (
     <>
       <NavBar count={count} />
+
       <Routes>
         <Route path="/" element={<Page__one />} />
         <Route path="/two" element={<Page__two />} />
