@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ZooStore/static/css/main.071419d1.css",
-    "main.js": "/ZooStore/static/js/main.a6d9ef4b.js",
+    "main.js": "/ZooStore/static/js/main.f4d8c87f.js",
     "static/media/animal__backround.jpg": "/ZooStore/static/media/animal__backround.175a6855b89481c9cb8a.jpg",
     "static/media/dog__group.jpg": "/ZooStore/static/media/dog__group.6d3fb5896c125c57ca7e.jpg",
     "static/media/sharpey.jpg": "/ZooStore/static/media/sharpey.5c516354ff6c48471305.jpg",
@@ -10,10 +10,10 @@
     "static/media/buldog.jpg": "/ZooStore/static/media/buldog.7bc99652e60a9f94462c.jpg",
     "index.html": "/ZooStore/index.html",
     "main.071419d1.css.map": "/ZooStore/static/css/main.071419d1.css.map",
-    "main.a6d9ef4b.js.map": "/ZooStore/static/js/main.a6d9ef4b.js.map"
+    "main.f4d8c87f.js.map": "/ZooStore/static/js/main.f4d8c87f.js.map"
   },
   "entrypoints": [
     "static/css/main.071419d1.css",
-    "static/js/main.a6d9ef4b.js"
+    "static/js/main.f4d8c87f.js"
   ]
 }
